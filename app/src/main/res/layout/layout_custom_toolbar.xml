@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/transparent">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/padding_16"
+        android:background="@drawable/bg_border_13dp"
+        android:padding="@dimen/padding_6"
+        android:src="@drawable/ic_arrow_back_white" />
+
+    <ImageView
+        android:id="@+id/ic_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/padding_16"
+        android:padding="@dimen/padding_6"
+        android:src="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/ic_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/padding_8"
+        android:layout_toStartOf="@id/ic_right"
+        android:padding="@dimen/padding_6"
+        android:src="@drawable/ic_search"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Tiêu đề"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_18" />
+
+    <TextView
+        android:id="@+id/tv_done"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/padding_16"
+        android:gravity="center"
+        android:text="Tiếp tục"
+        android:textColor="@color/blue_text_done"
+        android:textSize="@dimen/text_size_15"
+        android:visibility="gone" />
+
+</RelativeLayout>

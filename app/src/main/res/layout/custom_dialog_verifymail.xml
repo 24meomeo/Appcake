@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="50dp"
+    android:orientation="vertical"
+    android:background="@drawable/rounddialog">
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/toprounddialog"-->
+<!--        android:gravity="center"-->
+<!--        android:padding="10dp"-->
+<!--        android:text="Cập nhật mật khẩu"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="20dp" />-->
+<!--    <EditText-->
+<!--        android:id="@+id/edtdialogPass"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Nhập mật khẩu"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:padding="15dp"-->
+<!--        android:background="@drawable/bgroundeditdialog"/>-->
+<!--    <EditText-->
+<!--        android:id="@+id/edtdialogRePass"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Nhập lại mật khẩu"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:padding="15dp"-->
+<!--        android:background="@drawable/bgroundeditdialog"/>-->
+<!--    <Button-->
+<!--        android:id="@+id/btnDialogChange"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:text="Đổi mật khẩu"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:backgroundTint="@color/texthome"-->
+<!--        android:layout_marginBottom="10dp"/>-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toprounddialog"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Cập nhật mail thành công!"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+    <TextView
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:text="Vui lòng xác nhận mail trong hòm thư của bạn để tiếp tục"/>
+    <TextView
+        android:id="@+id/tvDialogReVerifyMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="@color/texthome"
+        android:text="Gửi lại xác nhận mail"
+        />
+    <Button
+        android:id="@+id/btnDialogContinue"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Tiếp tục"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/texthome"
+        android:layout_marginBottom="10dp"/>
+</LinearLayout>

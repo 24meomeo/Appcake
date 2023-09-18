@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="210dp"
+    android:layout_height="250dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginRight="25dp">
+
+    <ImageView
+        android:id="@+id/itfvbgr"
+        android:layout_width="170dp"
+        android:layout_height="250dp"
+        android:background="@drawable/roundnotselect"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="85dp"
+        android:background="#FFC3C3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <ImageView
+        android:id="@+id/itfvpict"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="90dp"
+        android:background="@color/cake"
+        android:scaleType="fitCenter"
+        android:layout_marginRight="5dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/itfvname"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Bk socola socola"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"/>
+    <TextView
+        android:id="@+id/itfvprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/cake"
+        android:text="30.000d"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"/>
+
+    <ImageButton
+        android:id="@+id/itfvadd"
+        android:layout_width="30dp"
+        android:layout_height="27dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/plus"
+        android:background="@null"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="@id/itfvbgr"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="130dp"
+        android:layout_marginBottom="15dp"/>
+
+    <LinearLayout
+        android:id="@+id/itvote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="65dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/starvote"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"/>
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/starvote"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"/>
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/starvote"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"/>
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/starvote"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"/>
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/starvote"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"/>
+
+    </LinearLayout>
+<!--    <ImageView-->
+<!--        android:id="@+id/itfvheart"-->
+<!--        android:layout_width="28dp"-->
+<!--        android:layout_height="28dp"-->
+<!--        android:src="@drawable/heart"-->
+<!--        android:scaleType="fitCenter"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/itvote"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        android:layout_marginLeft="15dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        />-->
+    <CheckBox
+        android:id="@+id/itfvheart"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/ic_favourite"
+        android:scaleType="fitCenter"
+        android:visibility="visible"
+        android:button="@null"
+        app:layout_constraintTop_toBottomOf="@id/itvote"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+
+        />
+<!--    <CheckBox-->
+<!--        android:id="@+id/btnFavourite"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginEnd="30dp"-->
+<!--        android:background="@drawable/ic_favourite"-->
+<!--        android:padding="12dp"-->
+<!--        android:visibility="visible"-->
+<!--        android:button="@null"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@id/tvNameDetail"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/tvRating" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>

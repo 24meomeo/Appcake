@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC3C3"
+    tools:context=".SanPham.ChiTietSPActivity">
+
+    <ImageButton
+        android:id="@+id/ibBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/ibShare"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_share"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@+id/vDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/ivRoundedBG"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/rounded_corner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/vDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="95dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivImageDetail"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="100dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNameDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        android:text="Bánh Tiramisu"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vDivider"/>
+
+    <TextView
+        android:id="@+id/tvRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-60dp"
+        android:layout_marginTop="8dp"
+        android:text="4.7"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/rtRatingBar"
+        app:layout_constraintTop_toBottomOf="@id/tvNameDetail"/>
+
+    <RatingBar
+        android:id="@+id/rtRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-30dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvRating"
+        app:layout_constraintBottom_toBottomOf="@id/tvRating"
+
+        android:numStars="5"
+        android:rating="4"
+        android:stepSize="1"
+        android:progressBackgroundTint="@android:color/darker_gray"
+        android:progressTint="@android:color/holo_orange_dark"
+        android:scaleX="0.4"
+        android:scaleY="0.4"/>
+
+    <CheckBox
+        android:id="@+id/btnFavourite"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/ic_favourite"
+        android:padding="12dp"
+        android:visibility="visible"
+        android:button="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvNameDetail"
+        app:layout_constraintBottom_toBottomOf="@id/tvRating" />
+
+    <ImageButton
+        android:id="@+id/btnMinus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_minus"
+        android:scaleType="fitXY"
+        android:background="@drawable/rounded_square"
+        android:onClick="decrement"
+        app:layout_constraintStart_toStartOf="@id/tvNameDetail"
+        app:layout_constraintTop_toBottomOf="@id/rtRatingBar"/>
+
+    <TextView
+        android:id="@+id/tvQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="1"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/btnMinus"
+        app:layout_constraintTop_toTopOf="@id/btnMinus"
+        app:layout_constraintBottom_toBottomOf="@id/btnMinus"/>
+
+    <ImageButton
+        android:id="@+id/btnPlus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_plus"
+        android:scaleType="fitXY"
+        android:background="@drawable/rounded_square"
+        android:onClick="increment"
+        app:layout_constraintStart_toEndOf="@id/tvQuantity"
+        app:layout_constraintTop_toBottomOf="@id/rtRatingBar"/>
+
+    <TextView
+        android:id="@+id/tvPriceDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="160.000đ"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/btnFavourite"
+        app:layout_constraintTop_toTopOf="@id/btnMinus"
+        app:layout_constraintBottom_toBottomOf="@id/btnMinus"/>
+
+    <RadioGroup
+        android:id="@+id/rgSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:checkedButton="@id/rbSizeS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMinus">
+
+        <RadioButton
+            android:id="@+id/rbSizeS"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_radio_group"
+            android:button="@android:color/transparent"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:text="  S"
+            android:textColor="@drawable/ic_color_radio_group"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rbSizeM"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_radio_group"
+            android:button="@android:color/transparent"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:text=" M"
+            android:textColor="@drawable/ic_color_radio_group"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rbSizeL"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_radio_group"
+            android:button="@android:color/transparent"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:text="  L"
+            android:textColor="@drawable/ic_color_radio_group"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rbSizeXL"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_radio_group"
+            android:button="@android:color/transparent"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:text=" XL"
+            android:textColor="@drawable/ic_color_radio_group"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+    <TextView
+        android:id="@+id/tvDetail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="16dp"
+        android:layout_marginEnd="40dp"
+        android:text="Loại bánh hấp dẫn này có nguồn gốc từ nước Ý thơ mộng. Cắn một miếng bánh với lớp bánh mềm mềm, hòa cùng mùi cà phê ca cao thơm phức, và đặc biệt là lớp kem béo ngậy nhưng không hề ngán. Món bánh này có thể chinh phục cả những người khó tính nhất."
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@id/btnBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tvNameDetail"
+        app:layout_constraintTop_toBottomOf="@id/rgSize" />
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="35dp"
+        android:padding="14dp"
+        android:src="@drawable/ic_cart"
+        android:scaleType="fitXY"
+        android:background="@drawable/circle2"
+        app:layout_constraintStart_toStartOf="@id/tvNameDetail"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnOrder"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="40dp"
+        android:text="Thêm vào giỏ hàng"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_rectangle"
+        app:layout_constraintStart_toEndOf="@id/btnBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnBack"
+        app:layout_constraintBottom_toBottomOf="@id/btnBack"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

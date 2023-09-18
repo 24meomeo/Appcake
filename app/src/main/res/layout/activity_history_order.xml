@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DonHang.HistoryOrderActivity">
+    
+    <TextView
+        android:id="@+id/tvLSDH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LỊCH SỬ ĐƠN HÀNG"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="28sp"
+        />
+    
+    <ImageView
+        android:id="@+id/btnBackOfLSDH"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/back"/>
+
+    <!--    recycle view -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvHistoryOrder"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLSDH"
+        tools:listitem="@layout/historyorderitem">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    
+
+</androidx.constraintlayout.widget.ConstraintLayout>

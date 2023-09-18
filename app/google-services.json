@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1052073382810",
+    "project_id": "cherrycake-31cce",
+    "storage_bucket": "cherrycake-31cce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052073382810:android:37d73e3fdaa75c66722023",
+        "android_client_info": {
+          "package_name": "com.example.cherrycake"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1052073382810-crrfrvs9h7g4sf1r1mtocfn2sd9v4t73.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8hpvG0skXIBFOVMBbaYc-dxHQ6cOampg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1052073382810-crrfrvs9h7g4sf1r1mtocfn2sd9v4t73.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

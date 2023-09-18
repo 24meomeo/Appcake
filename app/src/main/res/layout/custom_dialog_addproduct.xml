@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="50dp"
+    android:orientation="vertical"
+    android:background="@drawable/rounddialog">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toprounddialog"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Thêm sản phẩm"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+    <EditText
+        android:id="@+id/edtdialogReName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:background="@drawable/bgroundeditdialog"/>
+    <EditText
+        android:id="@+id/edtdialogRePrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập giá"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:background="@drawable/bgroundeditdialog"/>
+    <EditText
+        android:id="@+id/edtdialogReCate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập loại"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:background="@drawable/bgroundeditdialog"/>
+    <EditText
+        android:id="@+id/edtdialogReDes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập mô tả"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:background="@drawable/bgroundeditdialog"/>
+    <EditText
+        android:id="@+id/edtdialogReImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập ảnh"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:background="@drawable/bgroundeditdialog"/>
+    <Button
+        android:id="@+id/btnDialogProductChange"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:text="Cập nhật"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/texthome"
+        android:layout_marginBottom="10dp"/>
+</LinearLayout>

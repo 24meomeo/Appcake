@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="16dp">
+
+<!--    <com.google.android.material.card.MaterialCardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="150dp"-->
+<!--        app:cardCornerRadius="13dp"-->
+<!--        app:cardElevation="13dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--    </com.google.android.material.card.MaterialCardView>-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/LayoutCartItem"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="@drawable/roundnotselect"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivSP"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:padding="8dp"
+            android:scaleType="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/btnChinhSua"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/pen"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <ImageView
+            android:id="@+id/btnXoa"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/trash"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+<!--        <ImageView-->
+<!--            android:id="@+id/btnXoaSPne"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="55dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:src="@drawable/baseline_delete_forever_24"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            android:visibility="invisible"/>-->
+
+        <TextView
+            android:id="@+id/tvtenbanh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:text="Bánh kem socola hạt"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/ivSP"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvloaibanh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="35dp"
+            android:text="Loại"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/ivSP"
+            app:layout_constraintTop_toTopOf="@+id/tvtenbanh"
+            tools:layout_editor_absoluteX="173dp" />
+
+        <TextView
+            android:id="@+id/tvgiabanh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="35dp"
+            android:text="Giá"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/ivSP"
+            app:layout_constraintTop_toTopOf="@+id/tvloaibanh"
+            tools:layout_editor_absoluteX="175dp" />
+
+        <TextView
+            android:id="@+id/tvSoLuong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="35dp"
+            android:text="Số lượng"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/ivSP"
+            app:layout_constraintTop_toTopOf="@+id/tvgiabanh"
+            tools:layout_editor_absoluteX="175dp" />
+        <TextView
+            android:id="@+id/tvMoTa"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="35dp"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:scrollbarStyle="outsideOverlay"
+            android:text="Mô tả"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/ivSP"
+            app:layout_constraintTop_toTopOf="@+id/tvSoLuong"
+            tools:layout_editor_absoluteX="175dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

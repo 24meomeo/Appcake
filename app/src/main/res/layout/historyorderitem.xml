@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/khungcartitem"
+    android:backgroundTint="#EFBFBF"
+    android:layout_margin="10dp"
+    android:layout_height="200dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="40dp">
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:text="Số lượng"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/HistoryTongSL"
+            android:gravity="center"
+            android:layout_weight="3"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="40dp">
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:text="Tổng giá"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/HistoryTongGia"
+            android:gravity="center"
+            android:layout_weight="3"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="40dp">
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:text="Ngày mua"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/HistoryNgayMua"
+            android:gravity="center"
+            android:layout_weight="3"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="40dp">
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:text="Giờ mua"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/HistoryGioMua"
+            android:gravity="center"
+            android:layout_weight="3"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="40dp">
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:text="Trạng thái"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/HistoryTrangThai"
+            android:gravity="center"
+            android:layout_weight="3"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

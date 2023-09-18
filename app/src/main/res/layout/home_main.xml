@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.HomeActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/home_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"/>
+<!--        <ImageView-->
+<!--            android:id="@+id/imgSong"-->
+<!--            android:layout_width="411dp"-->
+<!--            android:layout_height="250dp"-->
+<!--            android:layout_marginTop="-30dp"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:srcCompat="@drawable/top"-->
+<!--            />-->
+<!--        <ImageButton-->
+<!--            android:id="@+id/imgbtImage"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:srcCompat="@drawable/user"-->
+<!--            android:scaleType="fitCenter"-->
+<!--            android:background="@null"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginLeft="-320dp"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"/>-->
+<!--        <ImageButton-->
+<!--            android:id="@+id/imgbtfind"-->
+<!--            android:layout_width="25dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:src="@drawable/find"-->
+<!--            android:scaleType="fitCenter"-->
+<!--            android:background="@null"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:layout_marginRight="60dp"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            />-->
+<!--        <ImageButton-->
+<!--            android:id="@+id/imgbtcart"-->
+<!--            android:layout_width="25dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:src="@drawable/cart"-->
+<!--            android:scaleType="fitCenter"-->
+<!--            android:background="@null"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:layout_marginRight="25dp"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"/>-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/intro"-->
+<!--            android:layout_width="300dp"-->
+<!--            android:layout_height="106dp"-->
+<!--            android:layout_marginTop="105dp"-->
+<!--            android:layout_marginRight="-90dp"-->
+<!--            android:src="@drawable/intro"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="16dp"-->
+<!--            android:layout_height="22dp"-->
+<!--            android:layout_marginTop="135dp"-->
+<!--            android:layout_marginLeft="-135dp"-->
+<!--            android:src="@drawable/map"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+<!--        <TextView-->
+<!--            android:id="@+id/tvdiachi"-->
+<!--            android:layout_width="172dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="135dp"-->
+<!--            android:layout_marginLeft="70dp"-->
+<!--            android:text="828 Sư Vạn Hạnh, Phường 12, Quận 10, TP.HCM"-->
+<!--            android:fontFamily="@font/inter"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="11dp"-->
+<!--            android:textColor="@color/white"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/imgbtdirect"-->
+<!--            android:layout_width="27dp"-->
+<!--            android:layout_height="28dp"-->
+<!--            android:layout_marginTop="135dp"-->
+<!--            android:layout_marginRight="-328dp"-->
+<!--            android:src="@drawable/direct"-->
+<!--            android:background="@null"-->
+<!--            android:scaleType="fitCenter"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+<!--        <ImageButton-->
+<!--            android:id="@+id/imgbtphone"-->
+<!--            android:layout_width="25dp"-->
+<!--            android:layout_height="26dp"-->
+<!--            android:layout_marginTop="135dp"-->
+<!--            android:layout_marginRight="-255dp"-->
+<!--            android:src="@drawable/phone"-->
+<!--            android:background="@null"-->
+<!--            android:scaleType="fitCenter"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            />-->
+<!--        <ImageButton-->
+<!--            android:id="@+id/imgbtaboutus"-->
+<!--            android:layout_width="23dp"-->
+<!--            android:layout_height="24dp"-->
+<!--            android:src="@drawable/aboutus"-->
+<!--            android:scaleType="fitCenter"-->
+<!--            android:background="@null"-->
+<!--            app:layout_constraintLeft_toLeftOf="@id/intro"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/intro"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            android:layout_marginLeft="28dp"-->
+<!--            />-->
+<!--        <TextView-->
+<!--            android:id="@+id/tvaboutus"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Về chúng tôi"-->
+<!--            android:fontFamily="@font/inter"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="11dp"-->
+<!--            android:textColor="@color/white"-->
+<!--            app:layout_constraintLeft_toLeftOf="@id/intro"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/intro"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:layout_marginLeft="55dp"-->
+<!--            />-->
+<!--        <ImageView-->
+<!--            android:layout_width="21dp"-->
+<!--            android:layout_height="22dp"-->
+<!--            android:src="@drawable/clock"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/intro"-->
+<!--            app:layout_constraintLeft_toLeftOf="@id/intro"-->
+<!--            app:layout_constraintRight_toRightOf="@id/intro"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="9:00 AM - 20:00 PM"-->
+<!--            android:fontFamily="@font/inter"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="11dp"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:layout_marginLeft="160dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/intro"-->
+<!--            app:layout_constraintLeft_toLeftOf="@id/intro"-->
+<!--            app:layout_constraintRight_toRightOf="@id/intro"-->
+<!--            />-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/cake"-->
+<!--            android:background="@drawable/roundcake"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_marginTop="220dp"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintRight_toLeftOf="@id/candy"-->
+<!--            >-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/cakeimg"-->
+<!--                android:layout_width="45dp"-->
+<!--                android:layout_height="33dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:src="@drawable/cakeselected" />-->
+<!--            <TextView-->
+<!--                android:id="@+id/caketv"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:text="For u"-->
+<!--                android:textSize="17dp"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:fontFamily="@font/inter"-->
+<!--                android:textStyle="bold"/>-->
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/candy"-->
+<!--            android:background="@drawable/roundnotselect"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_marginTop="220dp"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintLeft_toRightOf="@id/cake"-->
+<!--            app:layout_constraintRight_toLeftOf="@id/cupcake">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/candyimg"-->
+<!--                android:layout_width="42dp"-->
+<!--                android:layout_height="35dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:src="@drawable/candy" />-->
+<!--            <TextView-->
+<!--                android:id="@+id/candytv"-->
+<!--                android:visibility="gone"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:text="Candy"-->
+<!--                android:textSize="17dp"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:fontFamily="@font/inter"-->
+<!--                android:textStyle="bold"/>-->
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/cupcake"-->
+<!--            android:background="@drawable/roundnotselect"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_marginTop="220dp"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintLeft_toRightOf="@id/candy"-->
+<!--            app:layout_constraintRight_toLeftOf="@id/croissant">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/cupcakeimg"-->
+<!--                android:layout_width="40dp"-->
+<!--                android:layout_height="33dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:src="@drawable/cupcake" />-->
+<!--            <TextView-->
+<!--                android:id="@+id/cupcaketv"-->
+<!--                android:visibility="gone"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:text="Cupcake"-->
+<!--                android:textSize="17dp"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:fontFamily="@font/inter"-->
+<!--                android:textStyle="bold"/>-->
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/croissant"-->
+<!--            android:background="@drawable/roundnotselect"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_marginTop="220dp"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintLeft_toRightOf="@id/cupcake"-->
+<!--            app:layout_constraintRight_toRightOf="parent">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/croissantimg"-->
+<!--                android:layout_width="40dp"-->
+<!--                android:layout_height="33dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:src="@drawable/croissant" />-->
+<!--            <TextView-->
+<!--                android:id="@+id/croissanttv"-->
+<!--                android:visibility="gone"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:text="Croissant"-->
+<!--                android:textSize="17dp"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:fontFamily="@font/inter"-->
+<!--                android:textStyle="bold"/>-->
+<!--        </LinearLayout>-->
+<!--        <TextView-->
+<!--            android:id="@+id/tvViewAll1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="View all"-->
+<!--            android:textSize="15dp"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            android:layout_marginBottom="135dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            />-->
+<!--        <TextView-->
+<!--            android:id="@+id/tvViewAll2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="View all"-->
+<!--            android:textSize="15dp"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            android:layout_marginBottom="165dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            />-->
+<!--        <TextView-->
+<!--            android:id="@+id/favorite"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Yêu thích"-->
+<!--            android:textColor="@color/texthome"-->
+<!--            android:textSize="25dp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/cake"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginLeft="-230dp"/>-->
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/rcvFavouItem"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginLeft="45dp"-->
+<!--            android:paddingRight="15dp"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/favorite"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent" />-->
+<!--        <TextView-->
+<!--            android:id="@+id/recommend"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="-180dp"-->
+<!--            android:layout_marginTop="246dp"-->
+<!--            android:text="Gợi ý cho bạn"-->
+<!--            android:textColor="@color/texthome"-->
+<!--            android:textSize="25dp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/favorite"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent" />-->
+
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/rcvRcmItem"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="45dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:paddingRight="15dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/recommend"-->
+<!--            android:layout_marginBottom="30dp"/>-->
+        <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--        android:layout_width="100dp"-->
+        <!--        android:layout_height="100dp"-->
+        <!--        app:layout_constraintTop_toTopOf="parent"-->
+        <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--        app:layout_constraintLeft_toLeftOf="parent">-->
+
+        <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <!--    <TextView-->
+        <!--        android:id="@+id/catehome"-->
+        <!--        android:layout_width="100dp"-->
+        <!--        android:layout_height="100dp"-->
+        <!--        android:fontFamily="@font/inter"-->
+        <!--        android:rotation="270"-->
+        <!--        android:text="Trang chính"-->
+        <!--        android:textSize="16dp"-->
+        <!--        android:textStyle="bold"-->
+        <!--        android:layout_marginTop="70dp"-->
+        <!--        app:layout_constraintTop_toBottomOf="@id/song"-->
+        <!--        app:layout_constraintBottom_toTopOf="@id/catemua"-->
+        <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--        />-->
+        <!--    <ImageView-->
+        <!--        android:id="@+id/linehome"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="90dp"-->
+        <!--        android:src="@drawable/line"-->
+        <!--        android:layout_marginTop="100dp"-->
+        <!--        android:layout_marginRight="76dp"-->
+        <!--        app:layout_constraintRight_toRightOf="@id/catehome"-->
+        <!--        app:layout_constraintTop_toBottomOf="@id/song"-->
+        <!--        app:layout_constraintBottom_toTopOf="@id/linemua"-->
+        <!--        />-->
+
+        <!--    <TextView-->
+        <!--        android:id="@+id/catemua"-->
+        <!--        android:layout_width="100dp"-->
+        <!--        android:layout_height="100dp"-->
+        <!--        android:layout_marginTop="-40dp"-->
+        <!--        android:fontFamily="@font/inter"-->
+        <!--        android:rotation="270"-->
+        <!--        android:text="Mùa"-->
+        <!--        android:textSize="16dp"-->
+        <!--        android:textStyle="bold"-->
+        <!--        app:layout_constraintBottom_toTopOf="@id/catecartoon"-->
+        <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--        app:layout_constraintTop_toBottomOf="@id/catehome" />-->
+
+        <!--    <ImageView-->
+        <!--        android:id="@+id/linemua"-->
+        <!--        android:layout_width="4dp"-->
+        <!--        android:layout_height="50dp"-->
+        <!--        android:src="@drawable/line"-->
+        <!--        android:layout_marginRight="76dp"-->
+        <!--        app:layout_constraintRight_toRightOf="@id/catehome"-->
+        <!--        app:layout_constraintTop_toBottomOf="@id/linehome"-->
+        <!--        app:layout_constraintBottom_toTopOf="@id/linecartoon"-->
+        <!--        />-->
+        <!--    <TextView-->
+        <!--        android:id="@+id/catecartoon"-->
+        <!--        android:layout_width="100dp"-->
+        <!--        android:layout_height="100dp"-->
+        <!--        android:fontFamily="@font/inter"-->
+        <!--        android:rotation="270"-->
+        <!--        android:text="Hoạt hình"-->
+        <!--        android:textSize="16dp"-->
+        <!--        android:textStyle="bold"-->
+        <!--        app:layout_constraintTop_toBottomOf="@id/catemua"-->
+        <!--        app:layout_constraintBottom_toTopOf="@id/catebento"-->
+        <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--        />-->
+        <!--    <ImageView-->
+        <!--        android:id="@+id/linecartoon"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="60dp"-->
+        <!--        android:src="@drawable/line"-->
+        <!--        android:layout_marginTop="10dp"-->
+        <!--        android:layout_marginRight="76dp"-->
+        <!--        app:layout_constraintRight_toRightOf="@id/catecartoon"-->
+        <!--        app:layout_constraintTop_toBottomOf="@id/linemua"-->
+        <!--        app:layout_constraintBottom_toTopOf="@id/linebento"-->
+        <!--        />-->
+        <!--    <TextView-->
+        <!--        android:id="@+id/catebento"-->
+        <!--        android:layout_width="100dp"-->
+        <!--        android:layout_height="100dp"-->
+        <!--        android:fontFamily="@font/inter"-->
+        <!--        android:rotation="270"-->
+        <!--        android:text="Bento"-->
+        <!--        android:textSize="16dp"-->
+        <!--        android:textStyle="bold"-->
+        <!--        android:layout_marginTop="-30dp"-->
+        <!--        android:layout_marginBottom="50dp"-->
+        <!--        app:layout_constraintTop_toBottomOf="@id/catecartoon"-->
+        <!--        app:layout_constraintBottom_toTopOf="@id/nav"-->
+        <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--        />-->
+        <!--    <ImageView-->
+        <!--        android:id="@+id/linebento"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="50dp"-->
+        <!--        android:src="@drawable/line"-->
+        <!--        android:layout_marginTop="-30dp"-->
+        <!--        android:layout_marginBottom="50dp"-->
+        <!--        android:layout_marginRight="76dp"-->
+        <!--        app:layout_constraintRight_toRightOf="@id/catebento"-->
+        <!--        app:layout_constraintTop_toBottomOf="@id/linecartoon"-->
+        <!--        app:layout_constraintBottom_toTopOf="@id/nav"-->
+        <!--        />-->
+        <!--    <androidx.recyclerview.widget.RecyclerView-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginTop="330dp"-->
+        <!--        app:layout_constraintRight_toRightOf="parent"-->
+        <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--        app:layout_constraintTop_toTopOf="parent"/>-->
+
+        <!--    <meow.bottomnavigation.MeowBottomNavigation-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        app:mbn_circleColor="@color/white"-->
+        <!--        app:mbn_backgroundBottomColor="@color/cake"-->
+
+        <!--        tools:layout_editor_absoluteX="0dp"-->
+        <!--        tools:layout_editor_absoluteY="424dp" />-->
+
+        <!--    <LinearLayout-->
+        <!--        android:id="@+id/nav"-->
+        <!--        android:layout_width="1000dp"-->
+        <!--        android:layout_height="55dp"-->
+        <!--        android:orientation="horizontal"-->
+        <!--        android:gravity="center"-->
+        <!--        android:layout_marginTop="240dp"-->
+        <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--        app:layout_constraintRight_toRightOf="parent"-->
+        <!--        android:background="@color/cake">-->
+
+        <!--    </LinearLayout>-->
+
+
+
+
+
+
+
+        <!--    <ImageView-->
+        <!--        android:layout_width="170dp"-->
+        <!--        android:layout_height="230dp"-->
+        <!--        android:background="@color/cake"-->
+        <!--        tools:layout_editor_absoluteX="44dp"-->
+        <!--        tools:layout_editor_absoluteY="323dp" />-->
+
+        <!--    <ImageView-->
+        <!--        android:layout_width="175dp"-->
+        <!--        android:layout_height="232dp"-->
+        <!--        android:background="@color/cake"-->
+        <!--        tools:layout_editor_absoluteX="281dp"-->
+        <!--        tools:layout_editor_absoluteY="320dp" />-->
+
+        <!--    <ImageView-->
+        <!--        android:layout_width="125dp"-->
+        <!--        android:layout_height="139dp"-->
+        <!--        android:background="@color/croissant"-->
+        <!--        tools:layout_editor_absoluteX="117dp"-->
+        <!--        tools:layout_editor_absoluteY="379dp" />-->
+
+        <!--    <ImageView-->
+        <!--        android:layout_width="177dp"-->
+        <!--        android:layout_height="68dp"-->
+        <!--        android:background="@color/cake"-->
+        <!--        tools:layout_editor_absoluteX="42dp"-->
+        <!--        tools:layout_editor_absoluteY="597dp" />-->
+
+        <!--    <ImageView-->
+        <!--        android:layout_width="177dp"-->
+        <!--        android:layout_height="68dp"-->
+        <!--        android:background="@color/cake"-->
+        <!--        tools:layout_editor_absoluteX="280dp"-->
+        <!--        tools:layout_editor_absoluteY="597dp" />-->
+
+
+        <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+            android:id="@+id/btnav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mbn_circleColor="#FE4879"
+            app:mbn_backgroundBottomColor="#FE4879"
+            app:mbn_defaultIconColor="#ffffff"
+            app:mbn_selectedIconColor="#ffffff"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="20dp" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

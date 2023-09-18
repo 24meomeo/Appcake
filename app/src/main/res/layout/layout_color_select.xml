@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="@dimen/padding_normal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSectionNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_section_color_selection"
+        android:fontFamily="@font/google_sans_bold"
+        android:gravity="center"
+        android:paddingEnd="6dp"
+        android:textColor="@color/white"
+        android:layout_marginStart="@dimen/default_padding"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlSymmetry"
+        tools:text="1" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSectionTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/default_padding"
+        android:layout_marginStart="@dimen/padding_thin"
+        android:textAllCaps="true"
+        android:textColor="@color/section_title_color"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSectionNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvSectionNumber"
+        app:layout_constraintTop_toTopOf="@+id/tvSectionNumber"
+        tools:text="MÀU SẮC ỨNG DỤNG" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/rvColors"
+        android:padding="@dimen/padding_thin"
+        tools:listitem="@layout/item_app_color"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:itemCount="7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSectionNumber"
+        app:spanCount="7" />
+</androidx.constraintlayout.widget.ConstraintLayout>

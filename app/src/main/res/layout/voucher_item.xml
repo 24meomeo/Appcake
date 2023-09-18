@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/padding_10">
+
+    <RelativeLayout
+        android:id="@+id/voucherItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/khungtimmavoucher"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivVoucherItem"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/voucher25" />
+
+        <TextView
+            android:id="@+id/tvVoucherTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_toRightOf="@id/ivVoucherItem"
+            android:text="Voucher giảm giá 25%"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvVoucherDes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvVoucherTitle"
+            android:layout_marginLeft="16sp"
+            android:layout_toRightOf="@id/ivVoucherItem"
+            android:text="Áp dụng cho đơn hàng từ 150k" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

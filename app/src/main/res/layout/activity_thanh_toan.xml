@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context=".GioHang.ThanhToan.ThanhToanActivity">
+
+    <!--    layout Header of Thanh toán -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutPayHeader"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:autoSizeTextType="uniform"
+            android:drawableLeft="@drawable/baseline_arrow_back_24"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thanh toán"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/baseline_home_24"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--    layout chứa phần Trạng thái của đơn hàng -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutPayState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutPayHeader">
+
+        <!--      trạng thái hàng 1-->
+        <LinearLayout
+            android:id="@+id/layoutPayCheck1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="16dp"
+                android:text="Đã vận đơn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="220dp"
+                android:text="Hoàn thành" />
+
+        </LinearLayout>
+
+        <!--       trạng thái hàng 2-->
+        <LinearLayout
+            android:id="@+id/layoutPayCheck2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutPayCheck1">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="32dp"
+                android:src="@drawable/logocheck" />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/logoline" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/logouncheck" />
+        </LinearLayout>
+
+        <!--       trạng thái hàng 3-->
+        <LinearLayout
+            android:id="@+id/layoutPayCheck3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutPayCheck2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="56576757e5y" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--layout chứa phần Content chính của Trang Thanh Toán-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutPayContent"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/khung"
+        android:padding="16dp"
+        android:translationZ="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutPayState">
+
+        <TextView
+            android:id="@+id/tvHeaderOfPayContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="THÔNG TIN ĐƠN HÀNG"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--        layout chứa phần ITEM1 của content-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutPayContentItem1"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvHeaderOfPayContent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvThanhToan"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:listitem="@layout/thanhtoan_item" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!--        layout chứa phần ITEM2 của content-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutPayContentItem2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutPayContentItem1">
+
+
+            <TextView
+                android:id="@+id/tvOfPayContentItem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Mã khuyến mãi"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <FrameLayout
+                android:id="@+id/framOfPayContentItem2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="48dp"
+                android:background="@drawable/khungvuong"
+                android:padding="16dp"
+                app:layout_constraintLeft_toRightOf="@id/tvOfPayContentItem2"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tvTitleVoucher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:drawableEnd="@drawable/baseline_arrow_forward_ios_24"
+                    android:text="Nhập hoặc chọn mã"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!--        layout chứa phần ITEM3 content-->
+        <!--        <RelativeLayout-->
+        <!--            android:id="@+id/layoutPayContentItem3"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/layoutPayContentItem2"-->
+        <!--            app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--            android:layout_marginTop="8dp"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content">-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/tvOfPayContentItem3"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="Tổng tiền hàng"/>-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/tvPriceOfPayContentItem3"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_alignParentRight="true"-->
+        <!--                android:layout_marginRight="57dp"-->
+        <!--                android:text="300.000" />-->
+        <!--        </RelativeLayout>-->
+
+        <RelativeLayout
+            android:id="@+id/layoutPayContentItem3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutPayContentItem2">
+
+            <TextView
+                android:id="@+id/tvOfPayContentItem4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mã giảm giá" />
+
+            <TextView
+                android:id="@+id/tvPriceOfPayContentItem4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="57dp"
+                android:text="50.000" />
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    layout phần chứa checkbox-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutPayCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/layoutPayFooter"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <CheckBox
+            android:id="@+id/cbOfPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đồng ý các điều khoản"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    layout của phần bottom của content -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutPayFooter"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/khungbogoctren"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="8dp"
+            android:text="Tổng thanh toán:"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvPriceOfPayFooter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="28dp"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPay"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/khungbo4goc"
+            android:gravity="center"
+            android:text="Mua hàng"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

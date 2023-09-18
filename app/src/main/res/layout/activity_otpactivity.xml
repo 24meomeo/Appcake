@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.nhapgmailactivity">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="570dp"
+        android:src="@drawable/nn_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="serif"
+            android:text="CHERRY CAKE"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:textColor="@color/pinklogo"/>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/logo2" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ln1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="-10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" >
+
+        <ImageView
+            android:id="@+id/mot"
+            android:layout_width="135dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="02dp"
+
+            app:srcCompat="@drawable/motfull" />
+
+
+        <ImageView
+            android:id="@+id/hai"
+            android:layout_width="140dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="02dp"
+            app:srcCompat="@drawable/haifull" />
+
+        <ImageView
+            android:id="@+id/tick"
+            android:layout_width="143dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="02dp"
+            app:srcCompat="@drawable/baseline_check_circle_outline_24" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ln2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ln1" >
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="02dp"
+            android:text="Tạo tài khoản"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            app:srcCompat="@drawable/motfull" />
+
+        <TextView
+            android:id="@+id/tvso2"
+            android:layout_width="140dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="02dp"
+            android:text="Xác nhận"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            app:srcCompat="@drawable/hai" />
+
+        <TextView
+            android:id="@+id/tvdone"
+            android:layout_width="143dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="02dp"
+            android:text="Hoàn thành"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            app:srcCompat="@drawable/baseline_check_circle_outline_24" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtemailotp"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="31dp"
+        android:background="@drawable/ic_frame"
+        android:drawableStart="@drawable/baseline_email_24"
+        android:drawablePadding="10dp"
+        android:inputType="textEmailAddress"
+        android:padding="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ln2" />
+
+    <TextView
+        android:id="@+id/tvnhanotp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="293dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="45dp"
+        android:text="XÁC NHẬN GMAIL"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtemailotp" />
+
+
+
+    <Button
+        android:id="@+id/btntieptheo2"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="31dp"
+        android:backgroundTint="@color/pinklogo"
+        android:text="tiếp theo"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvnhanotp" />
+
+
+    <LinearLayout
+        android:id="@+id/lnhoac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="52dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btntieptheo2">
+
+        <TextView
+            android:id="@+id/btline2"
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="32dp"
+            android:background="@color/black"
+            android:text=""
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvhoac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="32dp"
+            android:text="HOẶC"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/btline"
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/black"
+            android:text="" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvdntrongotp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Đã có tài khoản, đăng nhập tại đây."
+        android:textSize="16sp"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="52dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lnhoac"/>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="261dp"
+        android:layout_marginTop="-10dp"
+        android:src="@drawable/nn_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvdntrongotp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

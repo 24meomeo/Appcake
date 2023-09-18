@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Home.Fragment.HomeFragmentActivity">
+
+    <ImageView
+        android:id="@+id/imgSong"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/top"
+        android:layout_width="411dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="-30dp" />
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="85dp"
+        android:fontFamily="@font/inter"
+        android:text="Xin chào bạn"
+        android:textColor="@color/cake"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvGreetingAuto"
+        android:layout_width="153dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/inter"
+        android:text="Chào buổi sáng"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWelcome" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgImagePro"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user"
+        app:shapeAppearanceOverlay="@style/circular"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="-310dp"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:id="@+id/imgbtfind"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="60dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:visibility="invisible"
+        android:src="@drawable/find" />
+
+    <ImageButton
+        android:id="@+id/imgbtcart"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="25dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cart" />
+<!--    <com.hanks.htextview.typer.TyperTextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="this is init sentence."-->
+<!--        app:charIncrease="3"-->
+<!--        app:typerSpeed="80"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"/>-->
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/imgbtdesign"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/pallete"-->
+<!--        android:background="@null"-->
+<!--        android:layout_marginTop="150dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"/>-->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/linkView"
+        android:layout_width="50dp"
+        app:layout_constraintTop_toTopOf="@id/intro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/pallete"
+        app:layout_constraintEnd_toStartOf="@id/intro"
+        app:layout_constraintBottom_toBottomOf="@id/intro"
+        android:layout_height="50dp"/>
+    <ImageView
+        android:id="@+id/intro"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="300dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginRight="-90dp"
+        android:src="@drawable/intro" />
+
+    <ImageView
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="16dp"
+        android:layout_height="22dp"
+        android:layout_marginLeft="-135dp"
+        android:layout_marginTop="135dp"
+        android:src="@drawable/map" />
+
+    <TextView
+        android:id="@+id/tvdiachi"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="135dp"
+        android:fontFamily="@font/inter"
+        android:text="828 Sư Vạn Hạnh, Phường 12, Quận 10, TP.HCM"
+        android:textColor="@color/white"
+        android:textSize="11dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/imgbtdirect"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="27dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginRight="-328dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/direct" />
+
+    <ImageButton
+        android:id="@+id/imgbtphone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="25dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginRight="-255dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/phone" />
+
+    <ImageButton
+        android:id="@+id/imgbtaboutus"
+        app:layout_constraintBottom_toBottomOf="@id/intro"
+        app:layout_constraintLeft_toLeftOf="@id/intro"
+        android:layout_width="23dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginBottom="8dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/aboutus" />
+
+    <TextView
+        android:id="@+id/tvaboutus"
+        app:layout_constraintBottom_toBottomOf="@id/intro"
+        app:layout_constraintLeft_toLeftOf="@id/intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/inter"
+        android:text="Về chúng tôi"
+        android:textColor="@color/white"
+        android:textSize="11dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        app:layout_constraintBottom_toBottomOf="@id/intro"
+        app:layout_constraintLeft_toLeftOf="@id/intro"
+        app:layout_constraintRight_toRightOf="@id/intro"
+        android:layout_width="21dp"
+        android:layout_height="22dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/clock" />
+
+    <TextView
+        app:layout_constraintBottom_toBottomOf="@id/intro"
+        app:layout_constraintLeft_toLeftOf="@id/intro"
+        app:layout_constraintRight_toRightOf="@id/intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/inter"
+        android:text="9:00 AM - 20:00 PM"
+        android:textColor="@color/white"
+        android:textSize="11dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/cake"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/candy"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/roundcake"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/cakeimg"
+            android:layout_width="45dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/cakeselected" />
+
+        <TextView
+            android:id="@+id/caketv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/inter"
+            android:text="For u"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/candy"
+        app:layout_constraintLeft_toRightOf="@id/cake"
+        app:layout_constraintRight_toLeftOf="@id/cupcake"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/roundnotselect"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/candyimg"
+            android:layout_width="42dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/candy" />
+
+        <TextView
+            android:id="@+id/candytv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/inter"
+            android:text="Candy"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cupcake"
+        app:layout_constraintLeft_toRightOf="@id/candy"
+        app:layout_constraintRight_toLeftOf="@id/croissant"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/roundnotselect"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/cupcakeimg"
+            android:layout_width="40dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/cupcake" />
+
+        <TextView
+            android:id="@+id/cupcaketv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/inter"
+            android:text="Cupcake"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/croissant"
+        app:layout_constraintLeft_toRightOf="@id/cupcake"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/roundnotselect"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/croissantimg"
+            android:layout_width="40dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/croissant" />
+
+        <TextView
+            android:id="@+id/croissanttv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/inter"
+            android:text="Croissant"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvViewAll1"
+        app:layout_constraintTop_toBottomOf="@id/croissant"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="20dp"
+        android:text="View all"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tvViewAll2"
+        app:layout_constraintTop_toBottomOf="@id/tvViewAll1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="270dp"
+        android:text="View all"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/favorite"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-230dp"
+        android:layout_marginTop="10dp"
+        android:text="Yêu thích"
+        android:textColor="@color/texthome"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvFavouItem"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="5dp"
+        android:paddingRight="15dp" />
+
+    <TextView
+        android:id="@+id/recommend"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-180dp"
+        android:layout_marginTop="255dp"
+        android:text="Gợi ý cho bạn"
+        android:textColor="@color/texthome"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvRcmItem"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginBottom="70dp"
+        android:paddingRight="15dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

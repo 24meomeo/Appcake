@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menubanhkem"
+            android:icon="@drawable/cake"
+            android:title="Bánh kem" />
+        <item
+            android:id="@+id/menubanhnho"
+            android:icon="@drawable/cupcake"
+            android:title="Bánh nhỏ" />
+
+        <item
+            android:id="@+id/menukeo"
+            android:icon="@drawable/candy"
+            android:title="Kẹo" />
+        <item
+            android:id="@+id/menubanhman"
+            android:icon="@drawable/croissant"
+            android:title="Bánh mặn" />
+    </group>
+</menu>

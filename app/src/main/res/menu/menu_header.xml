@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menuInf"
+            android:icon="@drawable/menuusinf"
+            android:title="Thông tin tài khoản" />
+        <item
+            android:id="@+id/menuVC"
+            android:icon="@drawable/menuusvc"
+            android:title="Ví voucher" />
+
+        <item
+            android:id="@+id/menuSP"
+            android:icon="@drawable/menuussp"
+            android:title="Hỗ trợ" />
+    </group>
+</menu>

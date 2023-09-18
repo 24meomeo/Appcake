@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="pinklogo">#EE3266</color>
+
+    <color name="cake">#FD4879</color>
+    <color name="candy">#47DFC4</color>
+    <color name="cupcake">#4DA1E2</color>
+    <color name="croissant">#FED056</color>
+    <color name="bgroundnotselect">#FBF2F7</color>
+    <color name="texthome">#5E4386</color>
+
+    <color name="textwhenclick">#FD4879</color>
+
+    <color name="colorPrimary">#FFF</color>
+    <color name="colorPrimaryDark">#FFF</color>
+    <color name="colorAccent">#F6CE55</color>
+    <color name="white50">#88FFFFFF</color>
+    <color name="lightGrey">#F5F5F5</color>
+    <color name="color_text_user">#101D32</color>
+    <color name="transparent">#00000000</color>
+    <color name="darkBlueBtn">#003F72</color>
+    <color name="pinkRed">#FF5577</color>
+    <color name="pinkRed10">#1AFF5577</color>
+    <color name="line">#F4F4F4</color>
+
+    <color name="colorText">#22215B</color>
+    <color name="colorTextTitle">#9997A5</color>
+
+    <color name="colorTextHighLight">#DD263C</color>
+    <color name="colorTextPrimary">#101D32</color>
+    <color name="colorTextSecondary">#B7BBC2</color>
+    <color name="colorTextThird">#303539</color>
+    <color name="colorTextPremium">#F8B60F</color>
+    <color name="colorBackground">#F8F8F8</color>
+    <color name="colorItemBackground">#FFFFFF</color>
+    <color name="colorBackgroundDevices">#F7F7F7</color>
+    <color name="colorBackgroundDialog">#52101D32</color>
+    <color name="colorBackgroundInfoWindow">#E6FFFFFF</color>
+    <color name="colorTextActionBar">#101D32</color>
+    <color name="colorButton">#0B83DD</color>
+    <color name="colorError">#DD263C</color>
+    <color name="corlor_error_empty">#D8DBEA</color>
+
+    <color name="colorLine">#ECEEF1</color>
+    <color name="orangeTextHighLight">#DF680F</color>
+    <color name="colorBackgroundActionMenu">#F4F5F6</color>
+
+    <color name="progressBlue">#057BFF</color>
+    <color name="progressRed">#ff2a2a</color>
+
+    <color name="blue">#0B83DD</color>
+    <color name="yellow">#F6CE55</color>
+    <color name="filterColorUnSelected">#adb1bc</color>
+    <color name="circle_choose_color">#31D19E</color>
+    <color name="grey800">#87859A</color>
+    <color name="invisible">#949494</color>
+    <color name="gray_line">#22949494</color>
+    <color name="gray_line_daily_get_point">#EFEFEF</color>
+    <color name="hint_text_color">#ACB1C0</color>
+    <color name="color_not_select">#AEAEAE</color>
+
+    <color name="colorTabNormal">#87859A</color>
+    <color name="colorMenuClose">#BEC2CE</color>
+    <color name="colorTabSelected">#0B83DD</color>
+    <color name="colorOtpSelected">#7FBDFF</color>
+    <color name="field_dart_mode">#2E0091FF</color>
+    <color name="blue_start">#0386E8</color>
+    <color name="blue_end">#0CA7EE</color>
+    <color name="blue_income">#3C91E6</color>
+    <color name="blue_income_10">#1A3C91E6</color>
+    <color name="blue_enable">#2FBEF7</color>
+    <color name="blue_text_done">#0091FF</color>
+    <color name="color_item_other">#EDF7FF</color>
+    <color name="colorBtnKeyboard">#EBECED</color>
+    <color name="color_blue_light">#3c91e6</color>
+    <color name="light_blue">#E5F3FF</color>
+    <color name="colorBgDialog">#51101D32</color>
+
+    <color name="colorBlue">#0091FF</color>
+    <color name="bgColorEdt">#E5F3FF</color>
+    <color name="bgYellow">#F9C400</color>
+    <color name="bgDialog">#4D000000</color>
+    <color name="color_tab_add">#1A0091FF</color>
+    <color name="section_title_color">#9997A7</color>
+    <color name="black_10">#1A000000</color>
+    <color name="color_date_point">#949494</color>
+    <color name="color_invisable">#FF2D55</color>
+    <color name="color_gray_top_line">#EAECEF</color>
+    <color name="color_gray_invite_code">#F6F8F7</color>
+    <color name="text_color_black">#182C4F</color>
+    <color name="color_btn_cancel">#D1D1D6</color>
+    <color name="background_dialog">#C9000000</color>
+
+    <color name="pink_1">#FD4879</color>
+    <color name="gray_light">#B0B0B0</color>
+
+</resources>
